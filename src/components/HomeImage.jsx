@@ -39,7 +39,7 @@ const HomeImage = () => {
             key={index}
             src="src/assets/home-page-images/diana-rafira-456jRTTQNC0-unsplash.jpg"
             alt={`Hotel ${index}`}
-            className="min-w-lg h-100 object-cover rounded-lg flex-shrink-0"
+            className="min-w-md h-100 object-cover rounded-lg flex-shrink-0"
           />
         ))}
       </div>
