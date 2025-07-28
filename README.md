@@ -14,3 +14,5 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## React bits 
 npm install gsap
+
+    npm install @vitejs/plugin-react --save-dev
