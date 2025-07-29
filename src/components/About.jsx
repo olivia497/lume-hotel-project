@@ -23,6 +23,12 @@ const About = () => {
             reprehenderit aspernatur dolorum adipisci labore. Vero beatae officia veritatis
             consequatur accusamus sint ex reprehenderit fuga repudiandae enim.
           </p>
+          <button 
+            className='bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200'
+            onClick={() => console.log('About us clicked!')}
+          >
+            About Us
+          </button>
         </div>
       </div>
     </div>
