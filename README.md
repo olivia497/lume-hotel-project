@@ -14,5 +14,9 @@ If you are developing a production application, we recommend using TypeScript wi
 
 ## React bits 
 npm install gsap
+https://reactbits.dev/text-animations/text-type
 
-    npm install @vitejs/plugin-react --save-dev
+
+
+npm install @vitejs/plugin-react --save-dev
+
