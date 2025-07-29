@@ -9,7 +9,7 @@ const About = () => {
           <img
             src="src/assets/jonathan-borba-00fCk2lZn1c-unsplash.jpg"
             alt="hotel seating area"
-            className='w-80 h-auto rounded-lg shadow-lg object-cover'
+            className='w-100 h-auto rounded-lg shadow-lg object-cover'
           />
         </div>
 
