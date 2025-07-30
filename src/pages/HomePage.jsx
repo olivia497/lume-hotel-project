@@ -2,6 +2,7 @@ import React from 'react'
 import HomeImage from '../components/HomeImage'
 import About from '../components/About'
 import TextType from '../components/TextType'
+import RoomCards from '../components/RoomCards'
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
       />
       </div>
       <About />
+      <RoomCards />
     </>
   )
 }
