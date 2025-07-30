@@ -1,6 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
+  const navigate = useNavigate()
+
+  const handleAboutClick = () => {
+    navigate('/about')
+  }
+
   return (
     <div className='flex justify-end items-center min-h-screen pr-32'>
       <div className='flex flex-col md:flex-row gap-8 items-center'>
@@ -25,7 +32,7 @@ const About = () => {
           </p>
           <button 
             className='bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200'
-            onClick={() => console.log('About us clicked!')}
+            onClick={handleAboutClick}
           >
             About Us
           </button>
