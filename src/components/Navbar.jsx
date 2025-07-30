@@ -18,11 +18,6 @@ const Navbar = () => {
           {/* Logo Section - Left */}
           <div className="absolute left-0 flex items-center">
             <NavLink className="flex items-center mr-4" to="/">
-              {/* <img
-                className="h-10 w-auto"
-                src={ logo }
-                alt="Eggs"
-              /> */}
               <span className="hidden md:block text-black text-2xl font-bold ml-2">
                 Lume
               </span>
@@ -49,6 +44,12 @@ const Navbar = () => {
                 className={linkClass}
               >
                 Amenities
+              </NavLink>
+              <NavLink
+                to="/about"
+                className={linkClass}
+              >
+                About Us
               </NavLink>
             </div>
           </div>
