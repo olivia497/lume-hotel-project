@@ -1,6 +1,6 @@
 import React from 'react'
 import HomeImage from '../components/HomeImage'
-import About from '../components/About'
+import Contact from '../components/Contact'
 import TextType from '../components/TextType'
 import RoomCards from '../components/RoomCards'
 
@@ -17,7 +17,7 @@ const HomePage = () => {
         cursorCharacter="|"
       />
       </div>
-      <About />
+      <Contact />
       <RoomCards />
     </>
   )

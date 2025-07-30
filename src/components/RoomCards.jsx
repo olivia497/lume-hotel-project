@@ -27,7 +27,7 @@ const RoomCards = () => {
     <section>
       <div>
         {/* Section Header */}
-        <div>
+        <div> 
           <h2 className='text-lg font-bold text-center'>
             Our Rooms
           </h2>

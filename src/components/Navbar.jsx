@@ -46,7 +46,7 @@ const Navbar = () => {
                 Amenities
               </NavLink>
               <NavLink
-                to="/about"
+                to="/contact"
                 className={linkClass}
               >
                 About Us

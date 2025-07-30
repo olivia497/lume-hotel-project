@@ -1,11 +1,11 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-const About = () => {
+const Contact = () => {
   const navigate = useNavigate()
 
-  const handleAboutClick = () => {
-    navigate('/about')
+  const handleContactClick = () => {
+    navigate('/contact')
   }
 
   return (
@@ -32,9 +32,9 @@ const About = () => {
           </p>
           <button 
             className='bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200'
-            onClick={handleAboutClick}
+            onClick={handleContactClick}
           >
-            About Us
+            Contact & Info
           </button>
         </div>
       </div>
@@ -42,4 +42,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Contact;
