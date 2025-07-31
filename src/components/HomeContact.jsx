@@ -9,7 +9,7 @@ const HomeContact = () => {
   }
 
   return (
-    <div className='flex justify-end items-center min-h-screen pr-32'>
+    <div className='flex justify-end items-center pr-32 my-20'>
       <div className='flex flex-col md:flex-row gap-8 items-center'>
         {/* Image Section */}
         <div className='flex-shrink-0'>
