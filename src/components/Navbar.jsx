@@ -34,18 +34,6 @@ const Navbar = () => {
                 Home
               </NavLink>
               <NavLink
-                to="/services"
-                className={linkClass}
-              >
-                Services
-              </NavLink>
-              <NavLink
-                to="/amenities"
-                className={linkClass}
-              >
-                Amenities
-              </NavLink>
-              <NavLink
                 to="/contact"
                 className={linkClass}
               >

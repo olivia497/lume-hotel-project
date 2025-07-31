@@ -37,7 +37,7 @@ const RoomCards = () => {
         </div>
 
         {/* Room Cards Grid */}
-        <div className="relative md:absolute px-20 py-8">
+        <div className="px-20 py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {roomsData.map((room, index) => (
               <RoomCard
