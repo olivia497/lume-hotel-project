@@ -29,11 +29,6 @@ const FAQ = () => {
       id: 5,
       question: "Do you offer valet parking?",
       answer: "Yes, we offer 24-hour indoor parking with valet service. When you arrive at the hotel, simply park in front and our valet team will take care of your car. Universal charging stations for electric vehicles are also available."
-    },
-    {
-      id: 6,
-      question: "How far is the hotel from Calgary International Airport?",
-      answer: "The hotel is approximately a twenty minute drive from the airport depending on traffic. We can arrange transportation or you can take a taxi, limousine, or rental car."
     }
   ]
 
@@ -45,7 +40,7 @@ const FAQ = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-8">
+    <div className="max-w-4xl mx-auto p-8 ms-60">
       <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Frequently Asked Questions</h2>
       
       <div className="space-y-4">

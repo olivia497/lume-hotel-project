@@ -18,8 +18,8 @@ const Contact = () => {
       </div>
 
       {/* Contact Information */}
-      <div className="w-screen relative p-8 my-6">
-        <div className="flex space-x-8">
+      <div className="w-screen relative p-8 my-8">
+        <div className="flex space-x-8 ms-30">
           <img src="" alt="Map" className="border border-gray-400 w-1/2 h-100 bg-gray-100 rounded"/>
           <div className="w-1/2 space-y-6 py-20">
             <div>
