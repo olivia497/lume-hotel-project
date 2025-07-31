@@ -11,7 +11,7 @@ const RoomCard = ({ title, description, image, price }) => {
           className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-300'
         />
         {price && (
-          <div className='absolute top-4 right-4 bg-emerald-200 text-black px-3 py-1 rounded-full text-sm font-semibold'>
+          <div className='absolute top-4 right-4 bg-amber-200 text-black px-3 py-1 rounded-full text-sm font-semibold'>
             ${price}/night
           </div>
         )}
@@ -28,7 +28,7 @@ const RoomCard = ({ title, description, image, price }) => {
         </p>
 
         <button 
-          className='w-full bg-emerald-400 hover:bg-emerald-500 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200'
+          className='w-full bg-amber-400 hover:bg-amber-500 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200'
           onClick={() => console.log(`Learn more about ${title} clicked!`)}
         >
           Learn More

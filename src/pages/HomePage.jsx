@@ -8,9 +8,9 @@ const HomePage = () => {
   return (
     <>
       <HomeImage />
-      <div className="absolute inset-0 flex items-center justify-center text-9xl" style={{ top: '400px'}}>
+      <div className="flex items-center justify-center text-9xl my-10 ps-40" style={{ top: '400px'}}>
       <TextType 
-        text={["Lume Hotel", "Escape. Unwind. Glow."]}
+        text={["Lume Hotel", "Escape & Unwind"]}
         typingSpeed={120}
         pauseDuration={1500}
         showCursor={true}

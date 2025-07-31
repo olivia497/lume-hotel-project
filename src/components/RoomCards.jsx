@@ -28,17 +28,17 @@ const RoomCards = () => {
       <div>
         {/* Section Header */}
         <div> 
-          <h2 className='text-lg font-bold text-center'>
+          <h2 className='text-lg font-bold text-center ms-30'>
             Our Rooms
           </h2>
-          <p className='text-center'>
+          <p className='text-center ms-30'>
             Discover our carefully designed accommodations, each offering unique comfort and luxury for your perfect getaway.
           </p>
         </div>
 
         {/* Room Cards Grid */}
-        <div className="px-20 py-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="px-8 py-8 ms-30">
+          <div className="grid grid-cols-3 gap-4 gap-8">
             {roomsData.map((room, index) => (
               <RoomCard
                 key={index}
