@@ -49,7 +49,7 @@ const Navbar = () => {
                 to="/contact"
                 className={linkClass}
               >
-                About Us
+                Contact & Info
               </NavLink>
             </div>
           </div>
