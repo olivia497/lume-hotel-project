@@ -34,6 +34,12 @@ const Navbar = () => {
                 Home
               </NavLink>
               <NavLink
+                to="/rooms"
+                className={linkClass}
+              >
+                Rooms
+              </NavLink>
+              <NavLink
                 to="/contact"
                 className={linkClass}
               >
