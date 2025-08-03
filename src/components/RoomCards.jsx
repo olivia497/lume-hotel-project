@@ -1,27 +1,14 @@
 import React from 'react'
-import RoomCard from './RoomCard' // Adjust path as needed
+import { roomsData } from '../data/roomsData';
 
 const RoomCards = () => {
-  const roomsData = [
-    {
-      title: "Deluxe Room",
-      description: "Spacious and elegant room with ocean views, perfect for couples seeking luxury and comfort.",
-      image: "https://images.unsplash.com/photo-1647870988181-5298e3b9036e?q=80&w=1462&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      price: 299
-    },
-    {
-      title: "Suite Premium",
-      description: "Our premium suite offers unparalleled luxury with a separate living area and panoramic views.",
-      image: "https://images.unsplash.com/photo-1647870988181-5298e3b9036e?q=80&w=1462&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      price: 459
-    },
-    {
-      title: "Standard Room",
-      description: "Comfortable and cozy accommodation with all essential amenities for a pleasant stay.",
-      image: "https://images.unsplash.com/photo-1647870988181-5298e3b9036e?q=80&w=1462&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      price: 199
-    }
-  ]
+  const handleViewDetails = (roomId) => {
+    // Redirect to Rooms.jsx page with the room ID
+    // window.location.href = `/rooms?id=${roomId}`;
+    
+    // Open in new tab
+    window.open(`/rooms?id=${roomId}`, '_blank');
+  };
 
   return (
     <section>
@@ -39,14 +26,35 @@ const RoomCards = () => {
         {/* Room Cards Grid */}
         <div className="px-8 py-8 ms-30">
           <div className="grid grid-cols-3 gap-4 gap-8">
-            {roomsData.map((room, index) => (
-              <RoomCard
-                key={index}
-                title={room.title}
-                description={room.description}
-                image={room.image}
-                price={room.price}
-              />
+            {roomsData.map((room) => (
+              <div key={room.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                <div className="relative">
+                  <img 
+                    src={room.image} 
+                    alt={room.title}
+                    className="w-full h-48 object-cover"
+                  />
+                  <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full shadow-md">
+                    <span className="text-sm font-semibold text-gray-800">${room.price}/night</span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-gray-800 mb-2">{room.title}</h3>
+                  <p className="text-gray-600 mb-4 text-sm leading-relaxed">{room.description}</p>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center text-sm text-gray-500">
+                      <span className="mr-1">👥</span>
+                      <span>Up to {room.maxGuests} guests</span>
+                    </div>
+                    <button 
+                      onClick={() => handleViewDetails(room.id)}
+                      className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 text-sm font-medium"
+                    >
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
         </div>
