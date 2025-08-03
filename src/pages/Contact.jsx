@@ -7,9 +7,9 @@ const Contact = () => {
     {/* Contact Background */}
       <div className="w-screen relative">
         <div className="bg-cover bg-center bg-no-repeat h-200 flex items-center justify-center w-full" 
-             style={{backgroundImage: "url('https://images.unsplash.com/photo-1572786258684-9b3d5671e7d8?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"}}>
+             style={{backgroundImage: "url('https://images.unsplash.com/photo-1621293954908-907159247fc8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"}}>
           <div className="bg-black text-white p-8 rounded-lg text-center w-300"
-            style={{backgroundColor: 'rgba(73, 80, 61, 0.80)'}}
+            style={{backgroundColor: 'rgba(48, 19, 5, 0.80)'}}
           >
             <h1 className="text-4xl font-bold mb-4">Contact & Info</h1>
             <p className="text-lg ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat libero voluptate quae, minus blanditiis culpa deserunt consequuntur enim ad aliquid vero maiores quibusdam inventore obcaecati quis illo dolor beatae alias similique nemo ipsa! Nam quisquam praesentium dolores ratione error in recusandae consequatur. Modi, totam accusantium esse quibusdam harum eligendi, praesentium officia veniam exercitationem adipisci architecto explicabo illum laboriosam repudiandae reiciendis placeat nam? Adipisci, repudiandae debitis. Debitis illum corrupti voluptatum reprehenderit. Ullam, beatae vero quaerat ab commodi laborum ut facilis deserunt cumque vel molestias, asperiores accusantium! Incidunt, saepe? Consequatur id optio sequi alias harum veniam voluptas, velit minus. Nihil, consectetur voluptatum.</p>
@@ -31,14 +31,14 @@ const Contact = () => {
                 <span className="font-semibold">Booking</span>
               </div>
               <div className="space-x-4">
-                <button className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Book Online</button>
+                <button className="bg-amber-600 text-white px-4 py-2 rounded hover:bg-amber-700">Book Online</button>
                 <button className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">1.877.111.111</button>
                 <button className="bg-gray-600 text-white px-4 py-2 rounded hover:bg-gray-700">000.000.0000</button>
               </div>
             </div>
             <div>
               <span className="font-semibold">Email: </span>
-              <span className="text-blue-600">email@lumehotel.com</span>
+              <span className="text-black">email@lumehotel.com</span>
             </div>
           </div>
         </div>

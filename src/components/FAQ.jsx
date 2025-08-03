@@ -40,7 +40,7 @@ const FAQ = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto p-8 ms-60">
+    <div className="flex flex-col p-8 ms-60">
       <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">Frequently Asked Questions</h2>
       
       <div className="space-y-4">
