@@ -14,9 +14,9 @@ const HomeContact = () => {
         {/* Image Section */}
         <div className='flex-shrink-0'>
           <img
-            src="src/assets/jonathan-borba-00fCk2lZn1c-unsplash.jpg"
+            src="https://images.unsplash.com/photo-1699268066895-2b5066669aff?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="hotel seating area"
-            className='w-100 h-auto rounded-lg shadow-lg object-cover'
+            className='w-100 h-100 rounded-lg shadow-lg object-cover'
           />
         </div>
 

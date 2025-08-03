@@ -47,8 +47,9 @@ const Rooms = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <div className="min-w-screen bg-white border-b">
-        <div className="w-full px-4 py-4">
+      <div className="min-w-screen bg-white">
+        <div className="px-4 py-4">
+          <h2 className="text-center text-3xl font-bold py-3">Rooms</h2>
           <button 
             onClick={handleBackToRooms}
             className="flex items-center text-gray-600 hover:text-gray-800 transition-colors"
@@ -93,7 +94,7 @@ const Rooms = () => {
                     key={index}
                     onClick={() => setCurrentImageIndex(index)}
                     className={`relative rounded-lg overflow-hidden ${
-                      index === currentImageIndex ? 'ring-2 ring-blue-600' : ''
+                      index === currentImageIndex ? 'ring-2 ring-amber-600' : ''
                     }`}
                   >
                     <img 
@@ -114,7 +115,7 @@ const Rooms = () => {
               <div className="flex items-center justify-between mb-4">
                 <h1 className="text-3xl font-bold text-gray-800">{selectedRoom.title}</h1>
                 <div className="text-right">
-                  <div className="text-3xl font-bold text-blue-600">${selectedRoom.price}</div>
+                  <div className="text-3xl font-bold text-amber-600">${selectedRoom.price}</div>
                   <div className="text-sm text-gray-500">per night</div>
                 </div>
               </div>
@@ -159,7 +160,7 @@ const Rooms = () => {
               <div className="grid grid-cols-2 gap-3">
                 {selectedRoom.amenities.map((amenity, index) => (
                   <div key={index} className="flex items-center">
-                    <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
+                    <div className="w-2 h-2 bg-amber-600 rounded-full mr-2"></div>
                     <span className="text-sm text-gray-600">{amenity}</span>
                   </div>
                 ))}
@@ -170,7 +171,7 @@ const Rooms = () => {
             <div className="pt-6 border-t">
               <button 
                 onClick={() => handleBookNow(selectedRoom.id)}
-                className="w-full bg-blue-600 text-white py-4 px-6 rounded-xl font-semibold text-lg hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
+                className="w-full bg-amber-600 text-white py-4 px-6 rounded-xl font-semibold text-lg hover:bg-amber-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
               >
                 Book Now - ${selectedRoom.price}/night
               </button>
@@ -196,7 +197,7 @@ const Rooms = () => {
                   <h4 className="font-semibold text-gray-800 mb-2">{room.title}</h4>
                   <p className="text-sm text-gray-600 mb-3">{room.description.substring(0, 100)}...</p>
                   <div className="flex items-center justify-between">
-                    <span className="text-lg font-bold text-blue-600">${room.price}/night</span>
+                    <span className="text-lg font-bold text-black">${room.price}/night</span>
                     <button 
                       onClick={() => {
                         setSelectedRoom(room);
@@ -204,7 +205,7 @@ const Rooms = () => {
                         window.history.pushState({}, '', `?id=${room.id}`);
                         window.scrollTo(0, 0);
                       }}
-                      className="text-blue-600 text-sm font-medium hover:text-blue-700"
+                      className="text-black border font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow transform hover:scale-105 transition-all duration-200"
                     >
                       View Details
                     </button>

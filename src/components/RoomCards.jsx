@@ -14,18 +14,18 @@ const RoomCards = () => {
     <section>
       <div>
         {/* Section Header */}
-        <div> 
-          <h2 className='text-lg font-bold text-center ms-30'>
+        <div className="flex flex-col items-center min-w-screen"> 
+          <h2 className="text-xl font-bold text-center">
             Our Rooms
           </h2>
-          <p className='text-center ms-30'>
+          <p className="text-center">
             Discover our carefully designed accommodations, each offering unique comfort and luxury for your perfect getaway.
           </p>
         </div>
 
         {/* Room Cards Grid */}
-        <div className="px-8 py-8 ms-30">
-          <div className="grid grid-cols-3 gap-4 gap-8">
+        <div className="flex justify-end items-center min-w-screen p-5 my-10">
+          <div className="flex flex-col md:flex-row gap-8 items-center">
             {roomsData.map((room) => (
               <div key={room.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="relative">
@@ -34,7 +34,7 @@ const RoomCards = () => {
                     alt={room.title}
                     className="w-full h-48 object-cover"
                   />
-                  <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full shadow-md">
+                  <div className="absolute top-4 right-4 bg-gray-200 px-3 py-1 rounded-full shadow-md">
                     <span className="text-sm font-semibold text-gray-800">${room.price}/night</span>
                   </div>
                 </div>
@@ -43,12 +43,11 @@ const RoomCards = () => {
                   <p className="text-gray-600 mb-4 text-sm leading-relaxed">{room.description}</p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center text-sm text-gray-500">
-                      <span className="mr-1">👥</span>
                       <span>Up to {room.maxGuests} guests</span>
                     </div>
                     <button 
                       onClick={() => handleViewDetails(room.id)}
-                      className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200 text-sm font-medium"
+                      className="bg-amber-600 hover:bg-amber-700 text-white text-sm font-medium py-2 px-4 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
                     >
                       View Details
                     </button>
