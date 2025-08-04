@@ -12,10 +12,10 @@ const RoomCards = () => {
 
   return (
     <section>
-      <div>
+      <div className="bg-[rgb(197,96,23,0.70)] min-w-screen">
         {/* Section Header */}
         <div className="flex flex-col items-center min-w-screen"> 
-          <h2 className="text-xl font-bold text-center">
+          <h2 className="text-3xl font-bold text-center pt-20 pb-5">
             Our Rooms
           </h2>
           <p className="text-center">
@@ -24,7 +24,7 @@ const RoomCards = () => {
         </div>
 
         {/* Room Cards Grid */}
-        <div className="flex justify-end items-center min-w-screen p-5 my-10">
+        <div className="flex justify-end items-center min-w-screen p-10 my-3 pb-20">
           <div className="flex flex-col md:flex-row gap-8 items-center">
             {roomsData.map((room) => (
               <div key={room.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
