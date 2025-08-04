@@ -7,7 +7,7 @@ const HomeImage = () => {
   
   // Configuration
   const totalImages = 10;
-  const scrollDistance = 320; // Width of image + gap (adjust based on your image width)
+  const scrollDistance = 320; // Width of image + gap
   const autoScrollInterval = 3000; // 3 seconds
 
   const scroll = (direction) => {

@@ -6,7 +6,7 @@ const Contact = () => {
     <>
     {/* Contact Background */}
       <div className="w-screen relative">
-        <div className="bg-cover bg-center bg-no-repeat h-200 flex items-center justify-center w-full" 
+        <div className="bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center w-full" 
              style={{backgroundImage: "url('https://images.unsplash.com/photo-1621293954908-907159247fc8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"}}>
           <div className="bg-black text-white p-8 rounded-lg text-center w-300"
             style={{backgroundColor: 'rgba(48, 19, 5, 0.80)'}}
