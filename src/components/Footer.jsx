@@ -18,7 +18,6 @@ export default function HotelFooter() {
             
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <span className="text-black-400 mt-1 text-lg">📍</span>
                 <div>
                   <p className="text-sm">100 Real Street SW</p>
                   <p className="text-sm">City, Province, A1A 2B2</p>
@@ -26,12 +25,10 @@ export default function HotelFooter() {
               </div>
               
               <div className="flex items-center space-x-3">
-                <span className="text-black-400 text-lg">📞</span>
                 <p className="text-sm">+000.000.0000</p>
               </div>
               
               <div className="flex items-center space-x-3">
-                <span className="text-black-400 text-lg">✉️</span>
                 <p className="text-sm">email@lumehotel.com</p>
               </div>
             </div>
