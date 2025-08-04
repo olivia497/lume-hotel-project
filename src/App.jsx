@@ -11,9 +11,9 @@ import Event from './pages/Events'
 
 const App = () => {
   return (
-    <>
+    <div className='min-h-screen flex flex-col'>
       <Navbar />
-      <div className='container'>
+      <div className='container flex- grow'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/events' element={<Event />} />
@@ -24,7 +24,7 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 
