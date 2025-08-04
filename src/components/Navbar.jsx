@@ -26,7 +26,7 @@ const Navbar = () => {
 
           {/* Centered Navigation Links */}
           <div className="mx-auto">
-            <div className="flex space-x-2">
+            <div className="flex space-x-5">
               <NavLink
                 to="/"
                 className={linkClass}
@@ -38,6 +38,12 @@ const Navbar = () => {
                 className={linkClass}
               >
                 Rooms
+              </NavLink>
+              <NavLink
+                to="/restaurant"
+                className={linkClass}
+              >
+                Restaurant
               </NavLink>
               <NavLink
                 to="/contact"
