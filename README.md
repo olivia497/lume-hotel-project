@@ -20,3 +20,20 @@ https://reactbits.dev/text-animations/text-type
 
 npm install @vitejs/plugin-react --save-dev
 
+
+## Colour palette
+Sandrift
+#aa9285
+rgb(170, 146, 133)
+
+Crowshead
+#23110a
+rgb(35, 17, 10)
+
+Hairy Heath
+#642d13
+rgb(100, 25, 19)
+
+Mule Fawn
+#8f542c
+rgb(143, 84, 44)
