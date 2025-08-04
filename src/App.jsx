@@ -8,23 +8,27 @@ import Footer from './components/Footer'
 import { Route, Routes } from 'react-router-dom'
 import Restaurant from './pages/Restaurant'
 import Event from './pages/Events'
+import ScrollToTop from './components/ScrollToTop'
 
 const App = () => {
   return (
-    <div className='min-h-screen flex flex-col'>
-      <Navbar />
-      <div className='container flex- grow'>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/events' element={<Event />} />
-          <Route path='/restaurant' element={<Restaurant />} />
-          <Route path='/rooms' element={<Rooms />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/booknow' element={<BookNow />} />
-        </Routes>
-      </div>
-      <Footer />
-    </div>
+    <>
+      <ScrollToTop />
+        <div className='min-h-screen flex flex-col'>
+          <Navbar />
+          <div className='container flex- grow'>
+            <Routes>
+              <Route path='/' element={<Home />} />
+              <Route path='/events' element={<Event />} />
+              <Route path='/restaurant' element={<Restaurant />} />
+              <Route path='/rooms' element={<Rooms />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='/booknow' element={<BookNow />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
+    </>
   )
 }
 

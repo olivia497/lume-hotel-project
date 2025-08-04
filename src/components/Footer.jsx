@@ -91,27 +91,27 @@ export default function HotelFooter() {
       </div>
 
       {/* Bottom Footer */}
-      <div className="border-t border-black-800">
+      <div className="border-t border-black-800 bg-[rgb(35,17,10)] text-white">
         <div className="max-w-7xl mx-auto px-4 py-2">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-sm text-black-400">
+            <div className="text-sm text-white-400">
              {/* empty */}
             </div>
             
             <div className="flex flex-wrap justify-center md:justify-end space-x-6 text-sm">
-              <a href="#" className="text-black-400 hover:text-black-400 transition-colors duration-200">
+              <a href="#">
                 Privacy Policy
               </a>
-              <a href="#" className="text-black-400 hover:text-black-400 transition-colors duration-200">
+              <a href="#">
                 Terms of Service
               </a>
-              <a href="#" className="text-black-400 hover:text-black-400 transition-colors duration-200">
+              <a href="#">
                 Cookie Policy
               </a>
-              <a href="#" className="text-black-400 hover:text-black-400 transition-colors duration-200">
+              <a href="#">
                 Accessibility
               </a>
-              <a href="#" className="text-black-400 hover:text-black-400 transition-colors duration-200">
+              <a href="#">
                 Sitemap
               </a>
             </div>
