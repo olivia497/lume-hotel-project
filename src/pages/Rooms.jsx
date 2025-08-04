@@ -35,7 +35,7 @@ const Rooms = () => {
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Room not found</h2>
           <button 
             onClick={handleBackToRooms}
-            className="bg-blue-600 text-white px-10 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+            className="text-gray-600 hover:text-gray-800 px-10 py-2 rounded-lg transform hover:scale-105 transition-all duration-200"
           >
             Back to Rooms
           </button>
@@ -52,9 +52,9 @@ const Rooms = () => {
           <h2 className="text-center text-3xl font-bold py-3">Rooms</h2>
           <button 
             onClick={handleBackToRooms}
-            className="flex items-center text-gray-600 hover:text-gray-800 transition-colors"
+            className="flex items-center text-gray-600 hover:text-gray-800 transform hover:scale-105 transition-all duration-200"
           >
-            <span className="mr-1">←</span>
+            <span className="ms-10 mr-1">←</span>
             Back to Rooms
           </button>
         </div>

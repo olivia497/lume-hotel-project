@@ -8,6 +8,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const isScrolled = window.scrollY > 50; // Change opacity after scrolling 50px
+
       setScrolled(isScrolled);
     };
 

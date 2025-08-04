@@ -2,7 +2,7 @@ export default function HotelFooter() {
   return (
     <footer className="bg-100 text-black border-t">
       {/* Main Footer Content */}
-      <div className="max-w-7xl mx-auto px-4 py-10 bg-[rgb(100,25,19,0.20)] min-w-screen">
+      <div className="max-w-7xl mx-auto px-4 py-10 bg-[rgb(170,146,133)] min-w-screen">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           
           {/* Hotel Info & Contact */}
