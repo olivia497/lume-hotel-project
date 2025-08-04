@@ -34,7 +34,7 @@ const Navbar = () => {
                 Home
               </NavLink>
               <NavLink
-                to="/Events"
+                to="/events"
                 className={linkClass}
               >
                 Events
