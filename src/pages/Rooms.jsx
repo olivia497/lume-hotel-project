@@ -45,7 +45,7 @@ const Rooms = () => {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-25">
       {/* Header */}
       <div className="min-w-screen bg-white">
         <div className="px-4 py-4">
