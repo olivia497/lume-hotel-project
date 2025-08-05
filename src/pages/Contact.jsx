@@ -6,8 +6,16 @@ const Contact = () => {
     <>
     {/* Contact Background */}
       <div className="w-screen relative">
-        <div className="bg-cover bg-center bg-no-repeat h-screen flex items-center justify-center w-full" 
-             style={{backgroundImage: "url('https://images.unsplash.com/photo-1621293954908-907159247fc8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"}}>
+        {/* Background Image Layer */}
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat h-screen" 
+             style={{backgroundImage: "url('https://images.unsplash.com/photo-1714150476483-ced60cc1acfc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"}}>
+        </div>
+        
+        {/* Blur Overlay Layer */}
+        <div className="absolute inset-0 backdrop-blur-xs"></div>
+        
+        {/* Content Layer */}
+        <div className="relative h-screen flex items-center justify-center w-full z-10">
           <div className="bg-black text-white p-8 rounded-lg text-center w-300"
             style={{backgroundColor: 'rgba(48, 19, 5, 0.80)'}}
           >
@@ -20,7 +28,7 @@ const Contact = () => {
       {/* Contact Information */}
       <div className="w-screen relative p-8 my-8">
         <div className="flex space-x-8 ms-30">
-          <img src="" alt="Map" className="border border-gray-400 w-1/2 h-100 bg-gray-100 rounded"/>
+          <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Map" className="border border-gray-400 w-1/2 h-100 bg-gray-100 rounded"/>
           <div className="w-1/2 space-y-6 py-20">
             <div>
               <h2 className="text-2xl font-bold mb-2">Lume Hotel</h2>

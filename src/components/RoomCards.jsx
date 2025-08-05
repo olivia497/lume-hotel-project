@@ -12,10 +12,10 @@ const RoomCards = () => {
 
   return (
     <section>
-      <div className="bg-[rgb(197,96,23,0.70)] min-w-screen">
+      <div className="min-w-screen bg-gray-100">
         {/* Section Header */}
         <div className="flex flex-col items-center min-w-screen"> 
-          <h2 className="text-3xl font-bold text-center pt-20 pb-5">
+          <h2 className="text-3xl font-bold text-center pt-10">
             Our Rooms
           </h2>
           <p className="text-center">

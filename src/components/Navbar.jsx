@@ -25,7 +25,7 @@ const Navbar = () => {
   const bookNowClass = ({ isActive }) =>
     isActive
       ? 'text-black underline underline-offset-8 rounded-md px-4 py-2 border-2 border-[rgb(35,17,10)] transition-all duration-300 hover:shadow-lg'
-      : 'text-black rounded-md px-4 py-2 border-2 border-transparent hover:border-black transition-all duration-300 hover:shadow-lg hover:bg-[rgb(197,96,23,0.70)] hover:font-bold';
+      : 'text-black rounded-md px-4 py-2 border-2 border-transparent hover:border-black transition-all duration-300 hover:shadow-lg hover:font-bold';
 
   return (
     <div className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${

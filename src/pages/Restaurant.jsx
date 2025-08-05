@@ -8,11 +8,11 @@ const Restaurant = () => {
       <div className="w-screen relative">
         <div 
           className="bg-cover bg-center bg-no-repeat h-150 flex items-center justify-center w-full" 
-          style={{backgroundImage: "url('https://images.unsplash.com/photo-1527598041828-aea5d622f3a8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"}}>
+          style={{backgroundImage: "url('https://images.unsplash.com/photo-1614962462970-b32959a9b78b?q=80&w=1014&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')"}}>
         </div>
       </div>
-    <div className="pt-10">
-      <div className="min-w-screen flex flex-col items-center pb-10">
+    <div className="pt-15">
+      <div className="min-w-screen flex flex-col items-center pb-15">
         <h1 className="font-bold text-2xl pt-10">
           Breakfast
         </h1>
@@ -21,7 +21,7 @@ const Restaurant = () => {
         </p>
       </div>
 
-      <div className="min-w-screen flex flex-col items-center bg-gray-100 py-16">
+      <div className="min-w-screen flex flex-col items-center bg-gray-100 py-15">
         <h2 className="font-bold text-2xl mb-12">Opening hours and menu</h2>
         
          <div className="max-w-md w-full space-y-4">

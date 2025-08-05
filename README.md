@@ -40,3 +40,6 @@ rgb(143, 84, 44)
 
 orange
 rgb(197,96,23,0.70)
+
+
+npm install @fortawesome/fontawesome-svg-core @fortawesome/free-regular-svg-icons @fortawesome/react-fontawesome

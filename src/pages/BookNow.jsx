@@ -379,8 +379,8 @@ const HotelBookingPage = () => {
           <div className="max-w-2xl mx-auto text-center">
             <div className="bg-white rounded-2xl shadow-lg p-12">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-green-600 text-2xl font-bold">✓</span>
               </div>
-              
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Booking Confirmed!</h2>
               <p className="text-gray-600 mb-8">
                 Thank you {guestDetails.firstName}! Your reservation has been confirmed.
