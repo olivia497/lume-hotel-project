@@ -4,6 +4,7 @@ import HomeContact from '../components/HomeContact'
 import RoomCards from '../components/RoomCards'
 import HomePageBackground from '../components/HomePageBackground'
 import ResturantHome from '../components/ResturantHome'
+import EventsHome from '../components/EventsHome'
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <HomeContact />
       <RoomCards />
       <ResturantHome />
+      <EventsHome />
     </>
   )
 }
