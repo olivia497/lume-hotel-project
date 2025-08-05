@@ -79,7 +79,7 @@ const HotelBookingPage = () => {
   const totalPrice = selectedRoom ? selectedRoom.price * calculateNights() : 0;
 
   return (
-    <div className="min-h-screen min-w-screen">
+    <div className="min-h-screen min-w-screen p-20">
 
       {/* Progress Steps */}
       <div className="max-w-7xl mx-auto px-4 py-6">

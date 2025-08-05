@@ -33,7 +33,7 @@ const Rooms = () => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-800 mb-4">Room not found</h2>
-          <button 
+          <button
             onClick={handleBackToRooms}
             className="text-gray-600 hover:text-gray-800 px-10 py-2 rounded-lg transform hover:scale-105 transition-all duration-200"
           >
