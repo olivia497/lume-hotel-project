@@ -1,45 +1,120 @@
-# React + Vite
+# Lume Hotel Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive website for a fictional luxury hotel built with React and Vite. Features an elegant design with smooth animations and a fully functional room booking interface.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Lume Hotel Website is a showcase project that demonstrates a complete hotel booking experience. Visitors can explore the hotel's amenities, browse available rooms, and make reservations through an intuitive and visually appealing interface.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Modern Desktop Design**: Optimized for desktop
+- **Interactive Booking System**: Browse and book hotel rooms
+- **Smooth Animations**: Enhanced user experience with [reactbits.dev animations](https://reactbits.dev/)
+- **Modern UI**: Clean, professional design using Tailwind CSS
+- **Fast Performance**: Built with Vite for optimal loading speeds
 
+## Technologies Used
 
-## React bits 
-npm install gsap
-https://reactbits.dev/text-animations/text-type
+- **React.js** - Frontend framework
+- **Vite** - Build tool and development server
+- **JavaScript (JSX)** - Programming language
+- **Tailwind CSS** - Utility-first CSS framework
+- **GSAP** - Animation library (via ReactBits.dev components)
 
+## Project Structure
 
+```
+lume-hotel-website/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/         # Main page components
+│   └── data/          # Static data and content
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
+```
 
-npm install @vitejs/plugin-react --save-dev
+## Getting Started
 
+### Prerequisites
 
-## Colour palette
-Sandrift
-#aa9285
-rgb(170, 146, 133)
+Make sure you have the following installed:
+- **Node.js** (version 14 or higher)
+- **npm** (comes with Node.js)
 
-Crowshead
-#23110a
-rgb(35, 17, 10)
+### Installation
 
-Hairy Heath
-#642d13
-rgb(100, 25, 19)
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/[your-username]/lume-hotel-website.git
+   cd lume-hotel-website
+   ```
 
-Mule Fawn
-#8f542c
-rgb(143, 84, 44)
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-orange
-rgb(197,96,23,0.70)
+3. **Install GSAP for React components**
+   ```bash
+   npm install gsap
+   ```
 
+4. **Start the development server**
+   ```bash
+   npm run dev
+   ```
 
-npm install @fortawesome/fontawesome-svg-core @fortawesome/free-regular-svg-icons @fortawesome/react-fontawesome
+5. **Open your browser**
+   Navigate to `http://localhost:3000` to view the website
+
+### Build for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+To preview the production build:
+
+```bash
+npm run preview
+```
+
+## Usage
+
+Once the development server is running, you can:
+
+- **Explore the homepage** to learn about Lume Hotel
+- **Browse available rooms** with detailed descriptions and pricing
+- **Use the booking system** to select dates and make reservations
+- **Navigate through different sections** to discover hotel amenities and services
+
+## Device Compatibility
+
+This website is currently optimized for desktop viewing and provides the best experience on:
+- Desktop computers and laptops
+- Larger screens (1024px width and above)
+
+*Note: Mobile responsiveness is planned for future updates.*
+
+## Contributing
+
+This is a personal showcase project and is not currently accepting contributions.
+
+## License
+
+This project is for educational and portfolio purposes.
+
+## Author
+
+Created by olivia497
+
+---
+
+**Note**: This is a fictional hotel website created for demonstration purposes. No actual bookings can be made through this interface.
