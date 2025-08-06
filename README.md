@@ -99,7 +99,6 @@ Once the development server is running, you can:
 
 This website is currently optimized for desktop viewing and provides the best experience on:
 - Desktop computers and laptops
-- Larger screens (1024px width and above)
 
 *Note: Mobile responsiveness is planned for future updates.*
 
