@@ -12,7 +12,7 @@ const RoomCards = () => {
 
   return (
     <section>
-      <div className="min-w-screen bg-gray-100">
+      <div className="min-w-screen bg-background-sand">
         {/* Section Header */}
         <div className="flex flex-col items-center min-w-screen"> 
           <h2 className="text-3xl font-bold text-center pt-10">

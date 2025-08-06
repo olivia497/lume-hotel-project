@@ -21,7 +21,7 @@ const Restaurant = () => {
         </p>
       </div>
 
-      <div className="min-w-screen flex flex-col items-center bg-gray-100 py-15">
+      <div className="min-w-screen flex flex-col items-center bg-background-sand py-15">
         <h2 className="font-bold text-2xl mb-12">Opening hours and menu</h2>
         
          <div className="max-w-md w-full space-y-4">

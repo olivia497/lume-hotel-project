@@ -1,3 +1,5 @@
+import React from 'react'
+
 export default function HotelFooter() {
   return (
     <footer className="bg-100 text-black border-t">
