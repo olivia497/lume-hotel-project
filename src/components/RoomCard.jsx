@@ -1,6 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
-const RoomCard = ({ title, description, image, price }) => {
+const RoomCard = ({ title, description, image, price, roomId }) => {
+  const navigate = useNavigate();
+
+  const handleLearnMore = () => {
+    navigate(`/rooms?id=${roomId}`);
+  };
+
   return (
     <div className='bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group'>
       {/* Image Section */}
@@ -29,7 +36,7 @@ const RoomCard = ({ title, description, image, price }) => {
 
         <button 
           className='w-full bg-amber-400 hover:bg-amber-500 text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200'
-          onClick={() => console.log(`Learn more about ${title} clicked!`)}
+          onClick={handleLearnMore}
         >
           Learn More
         </button>

@@ -1,13 +1,13 @@
 import React from 'react'
 import { roomsData } from '../data/roomsData';
+import { useNavigate } from 'react-router-dom';
 
 const RoomCards = () => {
+  const navigate = useNavigate();
+
   const handleViewDetails = (roomId) => {
     // Redirect to Rooms.jsx page with the room ID
-    // window.location.href = `/rooms?id=${roomId}`;
-    
-    // Open in new tab
-    window.open(`/rooms?id=${roomId}`, '_blank');
+    navigate(`/rooms?id=${roomId}`)
   };
 
   return (
