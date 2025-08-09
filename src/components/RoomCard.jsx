@@ -2,7 +2,7 @@ import React from 'react'
 
 const RoomCard = ({ title, description, image, price }) => {
   return (
-<div className='bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group'>
+    <div className='bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden group'>
       {/* Image Section */}
       <div className='relative h-48 overflow-hidden'>
         <img
