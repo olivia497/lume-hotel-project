@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { roomsData } from '../data/roomsData';
 
 const Rooms = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [selectedRoom, setSelectedRoom] = useState(null);
+  const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
 
   useEffect(() => {
-    // Get room ID from URL parameters
-    const urlParams = new URLSearchParams(window.location.search);
-    const roomId = urlParams.get('id');
+    // Get room ID from URL parameters using React Router
+    const roomId = searchParams.get('id');
     
     if (roomId) {
       const room = roomsData.find(r => r.id === parseInt(roomId));
@@ -17,15 +19,23 @@ const Rooms = () => {
       // If no specific room ID, show the first room or a room selection
       setSelectedRoom(roomsData[0]);
     }
-  }, []);
+  }, [searchParams]);
 
   const handleBookNow = (roomId) => {
-    window.location.href = `/booking?roomId=${roomId}`;
+    navigate(`/booknow?roomId=${roomId}`);
   };
 
   const handleBackToRooms = () => {
-    // Navigate back to home page or rooms overview
-    window.history.back();
+    // Navigate back to home page
+    navigate('/');
+  };
+
+  const handleViewDetails = (room) => {
+    setSelectedRoom(room);
+    setCurrentImageIndex(0);
+    // Update URL params using React Router
+    setSearchParams({ id: room.id });
+    window.scrollTo(0, 0);
   };
 
   if (!selectedRoom) {
@@ -199,12 +209,7 @@ const Rooms = () => {
                   <div className="flex items-center justify-between">
                     <span className="text-lg font-bold text-black">${room.price}/night</span>
                     <button 
-                      onClick={() => {
-                        setSelectedRoom(room);
-                        setCurrentImageIndex(0);
-                        window.history.pushState({}, '', `?id=${room.id}`);
-                        window.scrollTo(0, 0);
-                      }}
+                      onClick={() => handleViewDetails(room)}
                       className="text-black border font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow transform hover:scale-105 transition-all duration-200"
                     >
                       View Details
